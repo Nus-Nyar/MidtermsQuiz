@@ -1,4 +1,3 @@
-
 # Made by Ryan and Aprille
 # Took some of the code made by Alicia, Maxwell and Victoria(There was no TM)
 #2020-07-11
@@ -13,17 +12,17 @@ if space==" ":
             self.answer = answer
 
 question_list = [
-    "1. What is the difference between a raster image and a vector image? \n a) They're the same type of picture but have different names\n b) A vector image is higher quality and a raster image has lower quality(less and more pixels)\n c) A raster image is higher quality and a vector image has lower quality\n\n"
+    "1. What is the difference between a raster image and a vector image? \n a) They're the same type of picture but have different names\n b) A vector image is higher quality and a raster image has lower quality(less and more pixels)\n c) A raster image is higher quality and a vector image has lower quality\n\n",
   
-    "2. Which is the correct code?\n a) print(hello world)\n b) print('hello world)\n c) print('hello world')\n\n"
+    "2. Which is the correct code?\n a) print(hello world)\n b) print('hello world)\n c) print('hello world')\n\n",
 
-    "3. What is a set? \n a) An unordered list of items\n b) A list of items that is ordered first in first out\n c) A list of items that is ordered last in first out, first in last out\n\n"
+    "3. What is a set? \n a) An unordered list of items\n b) A list of items that is ordered first in first out\n c) A list of items that is ordered last in first out, first in last out\n\n",
 
-    "4. What is digital forensics? \n a) \n b)\n c)"
+    "4. What is digital forensics? \n a) \n b)\n c)",
 
-    "5. What is a stack? \n a) An unordered list of items\n b) A list of items that is ordered first in first out\n c) A list of items that is ordered last in first out, first in last out\n\n"
+    "5. What is a stack? \n a) An unordered list of items\n b) A list of items that is ordered first in first out\n c) A list of items that is ordered last in first out, first in last out\n\n",
 
-    "6. What is camel case? "
+    "6. What is camel case? \n a) \n b)\n c)"
 ]
 
 question_answers = [
@@ -35,17 +34,17 @@ question_answers = [
     Question(question_list[5], "a")
 ]
 
-def run_test(questions):
+def run_test(question_answers):
     score = 0
-    for question in questions:
+    for question in question_answers:
         answer = input(question.prompt)
         if answer == question.answer:
             score += 1
             if score <= 3:
                 print("You got " + str(score) + " out of " + str(len(question_answers)) +
-          " correct! Try better next time."
-          if score >= 4
-              print("You got " + str(score) + " out of " + str(len(question_answers) +  "correct")
+          " correct! Try better next time.")
+          if score >= 4:
+              print("You got " + str(score) + " out of " + str(len(question_answers)) + "correct")
               
 
-run_test(questions)
+run_test(question_answers)
