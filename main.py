@@ -7,7 +7,7 @@ print("Hello and welcome to a quiz for the first semester")
 space=input("Press space and enter to continue:")
 if space==" ":
 
-class Question:
+  class Question:
     def __init__(self, prompt, answer):
         self.prompt = prompt
         self.answer = answer
@@ -41,7 +41,10 @@ def run_test(questions):
         answer = input(question.prompt)
         if answer == question.answer:
             score += 1
-    print("you got " + str(score) + " out of " + str(len(question_answers)) +
-          " correct")
+            if score <= 3:
+      print("You got " + str(score) + " out of " + str(len(question_answers)) +
+          " correct! Try better next time"
+          else:
+            print("You got " + str(score)+" out of " + str(len(question_answers)) + " correct!")
 
 run_test(questions)
