@@ -7,10 +7,10 @@ print("Hello and welcome to a quiz for the first semester")
 space=input("Press space and enter to continue:")
 if space==" ":
 
-  class Question:
-    def __init__(self, prompt, answer):
-        self.prompt = prompt
-        self.answer = answer
+    class Question:
+        def __init__(self, prompt, answer):
+            self.prompt = prompt
+            self.answer = answer
 
 question_list = [
     "1. What is the difference between a raster image and a vector image? \n a) They're the same type of picture but have different names\n b) A vector image is higher quality and a raster image has lower quality(less and more pixels)\n c) A raster image is higher quality and a vector image has lower quality\n\n"
@@ -31,7 +31,7 @@ question_answers = [
     Question(question_list[1], "c"),
     Question(question_list[2], "a"),
     Question(question_list[3], "a"),
-    Question(question_list[4], "a"),
+    Question(question_list[4], "c"),
     Question(question_list[5], "a")
 ]
 
@@ -42,9 +42,10 @@ def run_test(questions):
         if answer == question.answer:
             score += 1
             if score <= 3:
-      print("You got " + str(score) + " out of " + str(len(question_answers)) +
-          " correct! Try better next time"
-          else:
-            print("You got " + str(score)+" out of " + str(len(question_answers)) + " correct!")
+                print("You got " + str(score) + " out of " + str(len(question_answers)) +
+          " correct! Try better next time."
+          if score >= 4
+              print("You got " + str(score) + " out of " + str(len(question_answers) +  "correct")
+              
 
 run_test(questions)
