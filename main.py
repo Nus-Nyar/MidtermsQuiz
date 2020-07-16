@@ -41,7 +41,7 @@ def run_test(question_answers):
         answer = answer.lower
         if answer == question.answer:
             score += 1           
-                print("You got " + str(score) + " out of " + str(len(question_answers)) + " correct")
+            print("You got " + str(score) + " out of " + str(len(question_answers)) + " correct")
               
 
 run_test(question_answers)
